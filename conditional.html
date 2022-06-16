@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+const hour = new Date().getHours(); 
+let day;
+
+if (hour <21)
+ {
+  day = "Good morning";
+} 
+else if (hour<18)
+ {
+  day = "Good evening";
+}
+else
+ {
+  day = "Good night";
+}
+
+document.getElementById("demo").innerHTML = day;
+</script>
+
+
+</body>
+</html>
+
